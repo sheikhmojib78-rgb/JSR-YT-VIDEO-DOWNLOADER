@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ============================================================
-# XZ Music & Video Downloader Bot
+# jsr Music & Video Downloader Bot
 # Developed by: https://t.me/jsrneverdiee
 # ============================================================
 
@@ -38,7 +38,7 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[logging.StreamHandler(sys.stdout)]
 )
-logger = logging.getLogger("XZMusicBot")
+logger = logging.getLogger("JSRMusicBot")
 
 if not BOT_TOKEN:
     logger.error("BOT_TOKEN is missing! Please configure .env.")
@@ -837,7 +837,7 @@ def handle_download(call):
 
 def main():
     print("=" * 60)
-    print("🚀 XZ Music Bot is running!")
+    print("🚀 JSR Music Bot is running!")
     print("🤖 Connected to Telegram successfully...")
     print("=" * 60)
     bot.infinity_polling(timeout=60, long_polling_timeout=25, restart_on_change=False)
